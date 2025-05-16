@@ -1,12 +1,8 @@
 import config
 
-from sqlalchemy.orm import sessionmaker
-from SQLAlchemy import engine
+from SQLAlchemy.db_session import session
 from models import Vehiculos
 from sqlalchemy import or_
-
-Session = sessionmaker(bind=engine)
-session = Session()
 
 vehiculos = session.query(Vehiculos).filter(
     or_(Vehiculos.marca == "Toyota", Vehiculos.marca == "Chevrolet")

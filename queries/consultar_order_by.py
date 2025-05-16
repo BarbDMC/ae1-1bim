@@ -1,12 +1,8 @@
 import config
 
-from sqlalchemy.orm import sessionmaker
-from SQLAlchemy import engine
+from SQLAlchemy.db_session import session
 from models import Servicios
 from sqlalchemy import desc
-
-Session = sessionmaker(bind=engine)
-session = Session()
 
 servicios = session.query(Servicios).order_by(desc(Servicios.fecha)).all()
 

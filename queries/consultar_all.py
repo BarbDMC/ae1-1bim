@@ -1,11 +1,7 @@
 import config
 
-from sqlalchemy.orm import sessionmaker
-from SQLAlchemy import engine
+from SQLAlchemy.db_session import session
 from models import TalleresMecanicos, Vehiculos, Servicios
-
-Session = sessionmaker(bind=engine)
-session = Session()
 
 talleres = session.query(TalleresMecanicos).all()
 vehiculosRegistrados = session.query(Vehiculos).all()
