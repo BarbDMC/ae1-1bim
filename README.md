@@ -14,26 +14,26 @@ Antes de ejecutar el proyecto, asegúrate de tener lo siguiente instalado:
 
 ## 📁 Estructura del proyecto
 
-ae1-1bim/
-├── SQLAlchemy/
-│   ├── db.py                     # Define engine, Base y SessionLocal
-│   ├── db_session.py             # Instancia única de sesión
-│   ├── configuracion.py             # Define la cadena de conexión a la base de datos
-├── models/
-│   ├── __init__.py               # Importa todos los modelos
-│   ├── talleres_mecanicos.py     # Modelo de TalleresMecanicos
-│   ├── vehiculos.py              # Modelo de Vehiculos
-│   └── servicios.py              # Modelo de Servicios
-├── migrations/
-│   ├── generar_tablas.py        # Crea las tablas en la base de datos
-│   ├── insertar_datos.py        # Inserta datos de prueba
-├── queries/
-│   ├── config.py                     # Configura el path global del proyecto
-│   ├── consultar_all.py         # Consulta con `.all()`
-│   ├── consultar_filter.py      # Consulta con `.filter()`
-│   ├── consultar_order_by.py    # Consulta con `.order_by()`
-│   ├── consultar_or.py          # Consulta con `or_()`
-│   └── consultar_and.py         # Consulta con `and_()`
+ae1-1bim/  
+├── SQLAlchemy/  
+│   ├── db.py                     # Define engine, Base y SessionLocal  
+│   ├── db_session.py             # Instancia única de sesión  
+│   ├── configuracion.py             # Define la cadena de conexión a la base de datos  
+├── models/  
+│   ├── __init__.py               # Importa todos los modelos  
+│   ├── talleres_mecanicos.py     # Modelo de TalleresMecanicos  
+│   ├── vehiculos.py              # Modelo de Vehiculos  
+│   └── servicios.py              # Modelo de Servicios  
+├── migrations/  
+│   ├── generar_tablas.py        # Crea las tablas en la base de datos  
+│   ├── insertar_datos.py        # Inserta datos de prueba  
+├── queries/  
+│   ├── config.py                     # Configura el path global del proyecto  
+│   ├── consultar_all.py         # Consulta con `.all()`  
+│   ├── consultar_filter.py      # Consulta con `.filter()`  
+│   ├── consultar_order_by.py    # Consulta con `.order_by()`  
+│   ├── consultar_or.py          # Consulta con `or_()`  
+│   └── consultar_and.py         # Consulta con `and_()`  
 
 ## 🧱 Cómo ejecutar las migraciones
 
@@ -50,8 +50,8 @@ ae1-1bim/
 Cada archivo en la carpeta queries/ ejecuta una consulta distinta. Puedes probarlos así:
 Asegúrate de tener las tablas y datos creados previamente usando los scripts de migrations/.
 
-`python queries/consultar_all.py`
-`python queries/consultar_filter.py`
-`python queries/consultar_order_by.py`
-`python queries/consultar_or.py`
-`python queries/consultar_and.py`
+`python queries/consultar_all.py`  
+`python queries/consultar_filter.py`  
+`python queries/consultar_order_by.py`  
+`python queries/consultar_or.py`  
+`python queries/consultar_and.py`  
