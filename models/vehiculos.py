@@ -13,7 +13,7 @@ class Vehiculos(Base):
     taller_id = Column(Integer, ForeignKey('talleres_mecanicos.id'))
 
     taller = relationship("TalleresMecanicos", back_populates="vehiculos")
-    servicios = relationship("Servicios", back_populates="vehiculos")
+    servicios = relationship("Servicios", back_populates="vehiculo")
 
     def __repr__(self):
-        return f"Vehiculo(placa={self.placa}, marca={self.marca}, modelo={self.modelo})"
+        return f"Vehiculos(placa={self.placa}, marca={self.marca}, modelo={self.modelo})"

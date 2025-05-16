@@ -14,4 +14,4 @@ class Servicios(Base):
     vehiculo = relationship("Vehiculos", back_populates="servicios")
 
     def __repr__(self):
-        return f"Servicio(descripcion={self.descripcion}, costo={self.costo}, fecha={self.fecha})"
+        return f"Servicios(descripcion={self.descripcion}, costo={self.costo}, fecha={self.fecha})"

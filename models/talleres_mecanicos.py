@@ -13,4 +13,4 @@ class TalleresMecanicos(Base):
     vehiculos = relationship("Vehiculos", back_populates="taller")
 
     def __repr__(self):
-        return f"TallerMecanico(nombre={self.nombre}, direccion={self.direccion})"
+        return f"TalleresMecanicos(nombre={self.nombre}, direccion={self.direccion})"
